@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container iframe-container">
+        <div class="row" id="detail">
+            <div class="col-xs-12 col-sm-4 information">
+                <img style="margin-top:20px" src="images/products/1.jpg" class="img-responsive" />
+                <h3>THÔNG SỐ KỸ THUẬT</h3>
+                <p class="double-lineheight">
+                    Thời gian khô bề mặt: 30 phút.<br />
+                    Thời gian khô toàn bộ(giờ phút) :1 giờ 30 phút.<br />
+                    Độ phủ lý thuyết: 8-10 m2/lít/lớp (đối với tường <br /> đã matit).<br />
+                    Khả năng chùi rửa sau 450 chu kỳ: không bào mòn.<br />
+                    Độ bền kiềm sau 150 giờ:không bong rộp.<br />
+                    Độ bền nước sau 250 giờ:không bong rộp.<br />
+
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-8">
+                <h3>THÔNG TIN SẢN PHẨM</h3>
+                <p>
+                    Sơn nước nội thất IMCOeco INTERIOR là loại sơn gốc nước chất lượng cao dùng để sơn phủ hoàn thiện trên các bề mặt bên trong công trình. Sơn FUJIIMCOINTERIOR có độ che phủ cao,màng sơn láng mịn, màu sắc bền đẹp và dễ sử dụng.
+                </p>
+                <h3>THÀNH PHẦN CẤU TẠO</h3>
+                <p>
+                    Nhựa gốc Acrylic, bột khoáng, chất màu và nước.
+                </p>
+                <h3>HƯỚNG DẪN THI CÔNG</h3>
+                <p>
+                    1/ Chuẩn bị bề mặt:<br />
+                    Tường cũ: cạo bỏ những lớp sơn cũ, rêu mốc, nếu lớp matit bị bong tróc thì phải cạo bỏ những lớp matit đó cho tới khi lộ ra lớp vữa trát. Dùng chổi cọ và nước quét cho sạch bụi,làm phẳng bề mặt bằng 2 lớp matit mới.<br />
+                    Tường mới: dùng giấy nhám làm phẳng bề mặt trước khi sơn hoặc xử lý bằng 2 lớp matit mới.
+                </p>
+                <p>
+                    2/ Thi công sơn:<br />
+                    Bề mặt sau khi chuẩn bị phải khô (độ ẩm không quá 16%) và cứng.<br />
+                    Sơn 1-2 lớp lót IMCOeco X-PRIMERcó tác dụng chống kiềm hóa và tăng độ bám dính của lớp sơn phủ.<br />
+                    Sau khi lớp sơn lót khô, tiếp tục sơn 2 lớp sơn hoàn thiện IMCOecoINTERIOR, lớp sau cách lớp trước ít nhất 2 giờ.
+                </p>
+                <p>
+                    3/ Cách pha sơn: Pha loãng với nước sạch không quá 10% theo thể tích. Khuấy đều sơn trước khi sử dụng.
+                </p>
+                <p>
+                    4/ Dụng cụ thi công : cọ, rulo hoặc súng phun.
+                </p>
+
+                <h3>HỆ THỐNG SƠN ĐỀ NGHỊ </h3>
+                <p>
+                    Lớp matit : Trét 2 lớp bột trét tường nội thất IMCO<br />
+                    Lớp sơn lót : Sơn 1-2 lớp sơn lót IMCOeco X-PRIMER<br />
+                    Lớp sơn hoàn thiện : Sơn 2 lớp sơn phủIMCOecoINTERIOR<br />
+
+                </p>
+                <h3>THÔNG TIN AN TOÀN</h3>
+                <p>
+                    Có thể gây dị ứng khi tiếp xúc trực tiếp với da.<br />
+                    Khi thi công phải mang dụng cụ bảo hộ thích hợp: Găng tay, kính bảo hộ, khẩu trang.<br />
+                    Không thải sơn trực tiếp vào cống rãnh hay nguồn nước. Trong trường hợp sơn bị đổ, nên thu gom bằng đất hoặc cát.<br />
+                    Bảo quản nơi khô ráo, thoáng mát, tránh xa tầm tay trẻ em.<br />
+                    Nếu nuốt phải, lập tức đến bác sĩ và mang theo thùng sơn hoặc nhãn sơn.<br>
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script>
+        $("ul li a[href^='#']").on('click', function (e) {
+            e.preventDefault();
+
+            // store hash
+            var hash = this.hash;
+
+            // animate
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 600, function () {
+                window.location.hash = hash;
+            });
+
+        });
+        $("[data-fancybox]").fancybox({
+            // Options will go here
+        });
+    </script>
+
+</body>
+</html>

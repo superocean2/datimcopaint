@@ -28,15 +28,23 @@
     <meta property="og:title" content="Công ty TNHH Sơn IMCO Việt Nam" />
     <meta property="og:image" content="/images/fb.jpg" />
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!--<link href="css/font-awesome.min.css" rel="stylesheet">-->
     <link href="css/animate.min.css" rel="stylesheet">
     <link href="css/jquery.fancybox.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet">
+    <!--<link href="css/responsive.css" rel="stylesheet">-->
     <style>
-        .navbar-brand
-        {
-            height:150px;
+        .navbar-brand {
+            height: 150px;
+        }
+
+        .client-item {
+            margin-top: 20px;
+        }
+
+        button.navbar-toggle{
+            background-color: #c0c0c0 !important;
+            border:solid 1px #c0c0c0 !important;
         }
     </style>
 </head>
@@ -71,28 +79,32 @@
     <section id="home-slider">
         <div class="container">
             <div class="row">
-                <div class="main-slider">
-                    <div class="slide-text">
-                        <h1>Công ty TNHH Sơn IMCO Việt Nam</h1>
-                        <p>
-                            IMCO là một trong những thương hiệu sơn nước nổi tiếng
+                <div class="col-xs-12 col-md-6">
+                    <div class="main-slider">
+                        <div class="slide-text">
+                            <h1>Công ty TNHH Sơn IMCO Việt Nam</h1>
+                            <p style="line-height:2em">
+                                IMCO là một trong những thương hiệu sơn nước nổi tiếng
 
-                            nhất hiện nay, được nhiều khách hàng ưu chuộng tin dùng.
+                                nhất hiện nay, được nhiều khách hàng ưu chuộng tin dùng.
 
-                            IMCO đã ứng dụng thành công nghệ Mỹ vào sản xuất sơn,
+                                IMCO đã ứng dụng thành công nghệ Mỹ vào sản xuất sơn,
 
-                            cùng với công thức pha chế sơn màu gốc nước đặc biệt… Có
+                                cùng với công thức pha chế sơn màu gốc nước đặc biệt… Có
 
-                            thể nói Gốc nước sơn IMCO là sự kết hợp giữa nhiều chất
+                                thể nói Gốc nước sơn IMCO là sự kết hợp giữa nhiều chất
 
-                            liệu tự nhiên khác nhau, Không chứa CHÌ và THỦY NGÂN.
-                        </p>
+                                liệu tự nhiên khác nhau, Không chứa CHÌ và THỦY NGÂN.
+                            </p>
+                        </div>
                     </div>
-                    <img src="images/home/slider/hill.png" class="slider-hill" alt="slider image">
-                    <img src="images/home/slider/house.png" class="slider-house" alt="slider image">
-                    <img src="images/home/slider/sun.png" class="slider-sun" alt="slider image">
-                    <img src="images/home/slider/birds1.png" class="slider-birds1" alt="slider image">
-                    <img src="images/home/slider/birds2.png" class="slider-birds2" alt="slider image">
+                </div>
+                <div class="hidden-xs hidden-sm col-md-6 main-slider">
+                    <img src="images/home/slider/hill.png" class="slider-hill img-responsive" alt="slider image">
+                    <img src="images/home/slider/house.png" class="slider-house img-responsive" alt="slider image">
+                    <img src="images/home/slider/sun.png" class="slider-sun img-responsive" alt="slider image">
+                    <img src="images/home/slider/birds1.png" class="slider-birds1 img-responsive" alt="slider image">
+                    <img src="images/home/slider/birds2.png" class="slider-birds2 img-responsive" alt="slider image">
                 </div>
             </div>
         </div>
@@ -102,7 +114,7 @@
     <section id="services">
         <div class="container" id="product">
             <div class="row">
-                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="600ms" data-wow-delay="300ms">
                     <div class="single-service">
                         <a data-fancybox data-type="iframe" data-src="1.html" href="javascript:;">
                             <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="300ms">
@@ -113,10 +125,10 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="600ms" data-wow-delay="300ms">
                     <div class="single-service">
                         <a data-fancybox data-type="iframe" data-src="2.html" href="javascript:;">
-                            <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="600ms">
+                            <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="400ms">
                                 <img src="images/products/2.jpg" alt="">
                             </div>
                             <h2>Sơn nước ngoại thất IMCOeco EXTERIOR</h2>
@@ -124,10 +136,10 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="600ms" data-wow-delay="300ms">
                     <div class="single-service">
                         <a data-fancybox data-type="iframe" data-src="3.html" href="javascript:;">
-                            <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
+                            <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="500ms">
                                 <img src="images/products/3.jpg" alt="">
                             </div>
                             <h2>Sơn lót chống kiềm ngoại thất IMCOeco X-PRIMER </h2>
@@ -137,7 +149,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="600ms" data-wow-delay="300ms">
                     <div class="single-service">
                         <a data-fancybox data-type="iframe" data-src="4.html" href="javascript:;">
                             <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="300ms">
@@ -148,10 +160,10 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="600ms" data-wow-delay="300ms">
                     <div class="single-service">
                         <a data-fancybox data-type="iframe" data-src="5.html" href="javascript:;">
-                            <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="600ms">
+                            <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="400ms">
                                 <img src="images/products/5.jpg" alt="">
                             </div>
                             <h2>Sơn nước ngoại thất cao cấp IMCOlOR GOLD SATIN G5 </h2>
@@ -159,10 +171,10 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="600ms" data-wow-delay="300ms">
                     <div class="single-service">
                         <a data-fancybox data-type="iframe" data-src="6.html" href="javascript:;">
-                            <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
+                            <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="500ms">
                                 <img src="images/products/6.jpg" alt="">
                             </div>
                             <h2>Sơn lót chống kiềm ngoại thất cao cấp IMCOLOR GOLD SUPER ALKALI 5 IN 1 </h2>
@@ -178,31 +190,31 @@
     <section id="clients">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-xs-12">
                     <div class="clients text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
                         <p><img src="images/home/clients.png" class="img-responsive" alt=""></p>
                         <h1 class="title">Khách hàng lớn của chúng tôi</h1>
                     </div>
-                    <div class="clients-logo wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
-                        <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="images/home/client1.png" class="img-responsive" alt=""></a>
-                        </div>
-                        <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="images/home/client2.png" class="img-responsive" alt=""></a>
-                        </div>
-                        <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="images/home/client3.png" class="img-responsive" alt=""></a>
-                        </div>
-                        <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="images/home/client4.png" class="img-responsive" alt=""></a>
-                        </div>
-                        <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="images/home/client5.png" class="img-responsive" alt=""></a>
-                        </div>
-                        <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="images/home/client6.png" class="img-responsive" alt=""></a>
-                        </div>
-                    </div>
+                </div>
+            </div>
+            <div class="clients-logo wow fadeIn row" data-wow-duration="500ms" data-wow-delay="500ms">
+                <div class="col-xs-3 col-sm-2 client-item">
+                    <a href="#"><img src="images/home/client1.png" class="img-responsive" alt=""></a>
+                </div>
+                <div class="col-xs-3 col-sm-2 client-item">
+                    <a href="#"><img src="images/home/client2.png" class="img-responsive" alt=""></a>
+                </div>
+                <div class="col-xs-3 col-sm-2 client-item">
+                    <a href="#"><img src="images/home/client3.png" class="img-responsive" alt=""></a>
+                </div>
+                <div class="col-xs-3 col-sm-2 client-item">
+                    <a href="#"><img src="images/home/client1.png" class="img-responsive" alt=""></a>
+                </div>
+                <div class="col-xs-3 col-sm-2 client-item">
+                    <a href="#"><img src="images/home/client2.png" class="img-responsive" alt=""></a>
+                </div>
+                <div class="col-xs-3 col-sm-2 client-item">
+                    <a href="#"><img src="images/home/client3.png" class="img-responsive" alt=""></a>
                 </div>
             </div>
         </div>
@@ -211,9 +223,11 @@
     <footer id="footer">
         <div class="container" id="contact">
             <div class="row">
-                <div class="col-sm-12 text-center bottom-separator">
+                <div class="col-xs-12 text-center bottom-separator">
                     <img src="images/home/under.png" class="img-responsive inline" alt="">
                 </div>
+            </div>
+            <div class="row">
                 <div class="col-md-3 col-xs-6">
                     <div class="contact-info bottom">
                         <h2>Liên hệ</h2>
@@ -255,13 +269,17 @@
         </div>
     </footer>
     <!--/#footer-->
-
+    <div class="hidden-xs" id="test-mobile"></div>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/wow.min.js"></script>
     <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script>
+        function isMobile()
+        {
+            return $("#test-mobile").css("display") == "none";
+        }
         $("ul li a[href^='#']").on('click', function (e) {
             e.preventDefault();
 
@@ -276,8 +294,8 @@
             });
 
         });
+
         $("[data-fancybox]").fancybox({
-            // Options will go here
         });
     </script>
 

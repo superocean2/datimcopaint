@@ -79,25 +79,6 @@
 
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script>
-        $("ul li a[href^='#']").on('click', function (e) {
-            e.preventDefault();
-
-            // store hash
-            var hash = this.hash;
-
-            // animate
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 600, function () {
-                window.location.hash = hash;
-            });
-
-        });
-        $("[data-fancybox]").fancybox({
-            // Options will go here
-        });
-    </script>
 
 </body>
 </html>
